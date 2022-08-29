@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<body>
+    <!-- On Click -->
+    <button onclick="alert('Hello');">Simple button</button>
+    <button onclick="myOnClickFunction()">Simple button 2</button>
+    <button id="simpleButton3">Simple button 3</button>
+
+    <!-- On Input -->
+    <label for="onInputEventInput">On Input Event:</label>
+    <input type="text" id="onInputEventInput" oninput="console.log(this.value);">
+
+    <!-- On Change -->
+    <label for="onChangeEventInput">On Change Event:</label>
+    <!-- <input type="text" id="onChangeEventInput" onchange="console.log(this.value);"> -->
+    <input type="text" id="onChangeEventInput" onchange="inputClick(this.value, event);">
+
+    <!-- Mouse Events -->
+    <br />
+    <div style="width: 400px; height: 400px; background-color: red; padding: 10px;" id="simpleDiv">
+        Parent Div
+        <div style="width: 200px; height: 200px; background-color: white; margin: 30px;">
+            Child Div
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
