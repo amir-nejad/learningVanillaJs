@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 02 - Client-side form validation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper center">
+        <form id="register-form" method="get">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" class="fs-larger">Registration Form</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>First Name</th>
+                        <td>
+                            <input class="form-input" placeholder="Enter your first name..." type="text" name="firstName" id="firstNameInput">
+                            <span class="validation-span" id="firstNameValidationSpan"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td>
+                            <input class="form-input" placeholder="Enter your last name..." type="text" name="lastName" id="lastNameInput">
+                            <span class="validation-span" id="lastNameValidationSpan"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>
+                            <input class="form-input" placeholder="Enter your email..." type="email" name="email" id="emailInput">
+                            <span class="validation-span" id="emailValidationSpan"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td>
+                            <input class="form-input" placeholder="Enter your password..." type="password" name="password" id="passwordInput">
+                            <span class="validation-span" id="passwordValidationSpan"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="submit-button">
+                                Submit
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    position: absolute;
+}
+
+#parentDiv {
+    width: 500px;
+    height: 500px;
+    background: red;
+    margin: 50px;
+    border-radius: 3%;
+    position: relative;
+}
+
+#childDiv {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    border-radius: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
